@@ -7,15 +7,15 @@ const Checkout = () => {
   const { state, removeFromCart } = useContext(AppContext);
   const { cart } = state;
 
-  const handleRemove = product => () => {
+  const handleRemove = (product) => () => {
     removeFromCart(product);
-  }
+  };
 
   return (
     <div className="Checkout">
       <div className="Checkout-content">
-        {cart.length > 0 ? <h3>Lista de pedidos</h3>: <h3>Sin pedidos...</h3>}
-        {cart.map(item => (
+        {cart.length > 0 ? <h3>Lista de pedidos</h3> : <h3>Sin pedidos...</h3>}
+        {cart.map((item) => (
           <div className="Checkout-item" key={item.id}>
             <div className="Checout-element">
               <h4>{item.title}</h4>
@@ -25,8 +25,7 @@ const Checkout = () => {
               <i className="fas fa-trash-alt"></i>
             </button>
           </div>
-        ))
-        }
+        ))}
       </div>
       {cart.length > 0 && (
         <div className="Checkout-sidebar">
@@ -36,7 +35,6 @@ const Checkout = () => {
           </Link>
         </div>
       )}
-
     </div>
   );
 };

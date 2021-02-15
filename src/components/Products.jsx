@@ -9,17 +9,21 @@ const Products = () => {
 
   const handleAddToCart = (product) => {
     addToCart(product);
-  }
+  };
 
   if (products.length === 0) {
-    return <Loader />
+    return <Loader />;
   }
 
   return (
     <div className="Products">
       <div className="Products-items">
         {products.map((product) => (
-          <Product key={product.id} product={product} handleAddToCart={handleAddToCart}></Product>
+          <Product
+            key={product.id}
+            product={product}
+            handleAddToCart={handleAddToCart}
+          ></Product>
         ))}
       </div>
     </div>
