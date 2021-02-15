@@ -43,7 +43,11 @@ const Information = () => {
           </form>
         </div>
         <div className="Information-buttons">
-          <div className="Information-back">Regresar</div>
+          <div className="Information-back">
+            <Link to="/checkout">
+              Regresar
+            </Link>
+          </div>
           <div className="Information-next">
             <button type="button" onClick={handleSubmit}>
               Pagar
