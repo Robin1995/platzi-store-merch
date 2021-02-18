@@ -22,7 +22,10 @@ const Home = () => {
           property="og:image"
           content="https://s3.amazonaws.com/gndx.dev/gndxdev.png"
         />
-        <meta property="og:url" content="https://platzi-store-merch-d1867.web.app/" />
+        <meta
+          property="og:url"
+          content="https://platzi-store-merch-d1867.web.app/"
+        />
         <meta property="og:site_name" content="Platzi Conf Store" />
         <meta property="og:locale" content="es_ES" />
         <meta property="og:type" content="article" />
@@ -30,7 +33,7 @@ const Home = () => {
       </Helmet>
       <Products products={initialState.products} />;
     </>
-  )
+  );
 };
 
 export default Home;

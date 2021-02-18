@@ -44,9 +44,7 @@ const Information = () => {
         </div>
         <div className="Information-buttons">
           <div className="Information-back">
-            <Link to="/checkout">
-              Regresar
-            </Link>
+            <Link to="/checkout">Regresar</Link>
           </div>
           <div className="Information-next">
             <button type="button" onClick={handleSubmit}>
