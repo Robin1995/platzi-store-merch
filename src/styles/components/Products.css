@@ -47,3 +47,11 @@
 .Products-item button:hover {
   background-color: rgba(39,44,49,0.06);
 }
+
+@media only screen and (max-width: 600px) {
+  .Products-items {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    grid-row-gap: 1em;
+  }
+}
