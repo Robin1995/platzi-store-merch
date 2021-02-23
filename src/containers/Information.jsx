@@ -39,7 +39,7 @@ const Information = () => {
             <input type="text" placeholder="Pais" name="country" />
             <input type="text" placeholder="Estado" name="state" />
             <input type="text" placeholder="Codigo postal" name="cp" />
-            <input type="text" placeholder="Telefono" name="phone" />
+            <input type="number" placeholder="Telefono" name="phone" />
           </form>
         </div>
         <div className="Information-buttons">

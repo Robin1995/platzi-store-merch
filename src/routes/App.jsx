@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Layout from '../components/Layout';
+import Loader from '../utils/Loader';
 import {
   Home,
   Checkout,
@@ -13,6 +14,10 @@ import AppContext from '../contex/AppContex';
 import useInitialState from '../hooks/useInitialState';
 const App = () => {
   const initialState = useInitialState();
+  const isEmpty = Object.keys(initialState.state).length;
+  if (isEmpty == 0) {
+    return <Loader />;
+  }
   return (
     <AppContext.Provider value={initialState}>
       <BrowserRouter>
