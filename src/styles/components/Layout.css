@@ -8,8 +8,9 @@ body {
 }
 
 .Main {
-  padding: 10px;
-  grid-template-columns: minmax(auto, 768px);
+  grid-template-columns: minmax(auto, 773px);
   display: grid;
   justify-content: center;
+  grid-template-rows: 100px 1fr 100px;
+  height: 100vh;
 }
